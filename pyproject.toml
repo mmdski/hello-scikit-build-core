@@ -3,7 +3,7 @@ requires = ["scikit-build-core", "cython"]
 build-backend = "scikit_build_core.build"
 
 [project]
-name = "example"
+name = "rectangle"
 version = "0.0.1"
 
 [tool.scikit-build]
