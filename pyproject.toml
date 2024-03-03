@@ -1,0 +1,15 @@
+[build-system]
+requires = ["scikit-build-core", "cython"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "example"
+version = "0.0.1"
+
+[tool.scikit-build]
+cmake.verbose = true
+cmake.build-type = "Release"
+logging.level = "INFO"
+
+[tool.scikit-build.cmake.define]
+SCIKIT_BUILD = "ON"
