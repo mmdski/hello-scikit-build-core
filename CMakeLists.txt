@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.15...3.26)
 
 if(SCIKIT_BUILD)
-    project(${SKBUILD_PROJECT_NAME} LANGUAGES C CXX)
+    project(${SKBUILD_PROJECT_NAME} LANGUAGES CXX)
 else()
-    project(rectangle LANGUAGES C CXX)
+    project(rectangle LANGUAGES CXX)
 endif()
 
 if(SCIKIT_BUILD)
@@ -28,4 +28,6 @@ if(SCIKIT_BUILD)
         WITH_SOABI)
 
     install(TARGETS rect DESTINATION .)
+else()
+    add_library(Rectangle Rectangle.cpp)
 endif()
